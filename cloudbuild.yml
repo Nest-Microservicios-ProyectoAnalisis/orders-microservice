@@ -12,16 +12,13 @@ steps:
 
   - name: 'gcr.io/cloud-builders/docker'
     args:
-    [
-      'push',
-        "northamerica-northeast2-docker.pkg.dev/microservices-project-471716/image-registry/orders-ms",
-    ]
+      - push
+      - northamerica-northeast2-docker.pkg.dev/microservices-project-471716/image-registry/orders-ms
 
 availableSecrets:
   secretManager:
-  - versionName: projects/749255492270/secrets/orders_database_url/versions/1
-    env: 'DATABASE_URL'
-
+    - versionName: projects/749255492270/secrets/orders_database_url/versions/1
+      env: 'DATABASE_URL'
 
 options:
   logging: CLOUD_LOGGING_ONLY
