@@ -11,7 +11,7 @@ steps:
     args:
     [
       'push',
-        "northamerica-northeast2-docker.pkg.dev/microservices-project-471716/image-registry/orders.ms",
+        "northamerica-northeast2-docker.pkg.dev/microservices-project-471716/image-registry/orders-ms",
     ]
 
 availableSecrets:
